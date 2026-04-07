@@ -7,6 +7,13 @@ var current_enemy: CombatData.Enemy
 #Initialize a battle
 func start_battle(enemy: CombatData.Enemy):
 	current_enemy = enemy
+	GameManager.is_boss_fight = false
 	print(CombatData.ENEMY_DETAILS[enemy]["name"])
-	#CombatData.ENEMY_DETAILS[enemy].name
+	SceneManager.change_scene("res://scenes/combat.tscn")
+
+# Starts the boss fight at the end of the run
+func start_boss_fight():
+	current_enemy = CombatData.Enemy.BOSS
+	GameManager.is_boss_fight = true
+	print("Boss fight starting: ", CombatData.ENEMY_DETAILS[CombatData.Enemy.BOSS]["name"])
 	SceneManager.change_scene("res://scenes/combat.tscn")

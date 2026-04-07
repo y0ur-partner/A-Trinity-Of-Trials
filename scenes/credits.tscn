@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://credits_scene_001"]
+
+[ext_resource type="Script" path="res://code/credits.gd" id="1_credits"]
+
+[node name="Credits" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_credits")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.05, 0.05, 0.1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "YOU DEFEATED THE BOSS"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 64
+
+[node name="Spacer1" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 40)
+
+[node name="CreditsLabel" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(800, 300)
+bbcode_enabled = true
+text = "[center][b]A TRINITY OF TRIALS[/b]
+
+A Deck-Building Roguelike
+
+[i]Design & Development[/i]
+David Valle
+
+[i]Built with[/i]
+Godot Engine 4.6
+
+Thank you for playing![/center]"
+theme_override_font_sizes/normal_font_size = 28
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 40)
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Return to Main Menu"
+theme_override_font_sizes/font_size = 32
+
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

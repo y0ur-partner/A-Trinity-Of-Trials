@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://die3erb0cgmut"
+path="res://.godot/imported/temp_battle_icon_hovering.aseprite-e88631de767c04d3d1a5b99d6bf978ca.res"
+
+[deps]
+
+source_file="res://sprites/map/temp_battle_icon_hovering.aseprite"
+dest_files=["res://.godot/imported/temp_battle_icon_hovering.aseprite-e88631de767c04d3d1a5b99d6bf978ca.res"]
+
+[params]
+

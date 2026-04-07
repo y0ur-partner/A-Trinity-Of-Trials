@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cvekica4yfvy2"]
+
+[ext_resource type="Texture2D" uid="uid://egu1wngeu73e" path="res://sprites/map/map_background.png" id="1_4xfga"]
+[ext_resource type="Script" uid="uid://dnmj8swgjfd8n" path="res://code/map.gd" id="1_gldc4"]
+[ext_resource type="Script" uid="uid://1lkj1eew2hfb" path="res://code/map_camera.gd" id="3_gldc4"]
+
+[node name="Map" type="Node2D" unique_id=428617770]
+script = ExtResource("1_gldc4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=56119393]
+offset_right = 2880.0
+offset_bottom = 1080.0
+texture = ExtResource("1_4xfga")
+
+[node name="MapCamera" type="Camera2D" parent="." unique_id=280065694]
+anchor_mode = 0
+limit_left = 0
+limit_right = 2880
+script = ExtResource("3_gldc4")

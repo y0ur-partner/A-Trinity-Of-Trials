@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dyqun32bweci8"
+path="res://.godot/imported/shop_icon_hovering.aseprite-47c14d21218fea35bc60bbe71281b277.res"
+
+[deps]
+
+source_file="res://sprites/map/shop_icon_hovering.aseprite"
+dest_files=["res://.godot/imported/shop_icon_hovering.aseprite-47c14d21218fea35bc60bbe71281b277.res"]
+
+[params]
+

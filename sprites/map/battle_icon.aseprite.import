@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://celhx1ekbgeu3"
+path="res://.godot/imported/battle_icon.aseprite-4f53d1c4dc7adae44fa493dfe8a81b2f.res"
+
+[deps]
+
+source_file="res://sprites/map/battle_icon.aseprite"
+dest_files=["res://.godot/imported/battle_icon.aseprite-4f53d1c4dc7adae44fa493dfe8a81b2f.res"]
+
+[params]
+

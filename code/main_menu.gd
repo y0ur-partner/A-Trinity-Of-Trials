@@ -1,5 +1,4 @@
-extends Node
+extends Control
 
-func _ready() -> void:
-	$"TempLabel".push_font_size(128)
-	$"TempLabel".global_position = Vector2(900, 200)
+func _on_start_pressed() -> void:
+	SceneManager.change_scene("res://scenes/ClassSelection.tscn")

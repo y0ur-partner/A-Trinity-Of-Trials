@@ -2,13 +2,44 @@
 
 [ext_resource type="Script" uid="uid://cnp7lxc0ctdpi" path="res://code/main_menu.gd" id="1_l6cm7"]
 
-[node name="MainMenu" type="Node" unique_id=139064769]
+[node name="MainMenu" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource("1_l6cm7")
 
-[node name="TempLabel" type="RichTextLabel" parent="." unique_id=799125659]
-offset_left = 618.0
-offset_top = 325.0
-offset_right = 1129.0
-offset_bottom = 620.0
-bbcode_enabled = true
-text = "Main Menu "
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.05, 0.05, 0.1, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -200.0
+offset_right = 250.0
+offset_bottom = 200.0
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "A TRINITY OF TRIALS"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 64
+
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 60)
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(500, 80)
+text = "Start Game"
+theme_override_font_sizes/font_size = 36
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_pressed"]

@@ -5,6 +5,10 @@ extends Node2D
 var spell_power: int = 0
 var block: int = 0
 
+# Status effects applied by the boss
+var weakened_turns: int = 0      # while > 0: player deals 50% damage
+var draw_penalty_turns: int = 0  # while > 0: draw 1 fewer card at turn start
+
 func _ready() -> void:
 	await get_tree().process_frame  # wait one frame for GameManager to be ready
 	init_health_bar()

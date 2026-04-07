@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bxm1k014odgu2"
+path="res://.godot/imported/event_icon_hovering.aseprite-08f92355e69ea82b13e2467c78a74324.res"
+
+[deps]
+
+source_file="res://sprites/map/event_icon_hovering.aseprite"
+dest_files=["res://.godot/imported/event_icon_hovering.aseprite-08f92355e69ea82b13e2467c78a74324.res"]
+
+[params]
+

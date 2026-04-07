@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep:*)",
+      "Bash(xargs basename:*)",
+      "Bash(xargs ls:*)",
+      "Read(//c/Users/valle/Documents/GitHub/A-Trinity-Of-Trials/**)"
+    ]
+  }
+}

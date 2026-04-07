@@ -8,7 +8,9 @@ script = ExtResource("1_o5qli")
 
 [node name="SceneContainer" type="Control" parent="." unique_id=1295325288]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 mouse_filter = 2
 
 [node name="UIOverlay" parent="." unique_id=209031180 instance=ExtResource("2_0wfyh")]
